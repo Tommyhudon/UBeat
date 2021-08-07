@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+// Set your brand colors
+$primary-blue: #005fd5;
+
+// Update Bulma's global variables
+$family-sans-serif: "Lato", sans-serif;
+$grey-light: transparent;
+
+$dark: #111111;
+$primary: $primary-blue;
+$link: $primary-blue;
+$danger: red;
+
+// Update some of Bulma's component variables
+$body-background-color: white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Since Bulma uses the variables above, this needs to be imported at the very end.
+@import "../../node_modules/bulma/bulma.sass";
