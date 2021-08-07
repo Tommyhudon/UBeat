@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
 import WaveSurfer from "wavesurfer";
 import { STOP_AUDIO } from "../../store/action-types";
 

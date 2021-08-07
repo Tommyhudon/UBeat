@@ -55,7 +55,7 @@ export default {
   },
   computed: {
     ...mapState({
-      currentAlbum: state => state.albums.currentAlbum,
+      currentAlbum: state => state.albums.currentAlbum
     })
   }
 };
@@ -110,7 +110,7 @@ export default {
 
   .tracks-container {
     min-width: 800px;
-    padding:100px 24px 0;
+    padding: 100px 24px 0;
   }
 }
 

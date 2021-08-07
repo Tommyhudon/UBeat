@@ -1,4 +1,3 @@
-
 // Artist
 export const GET_ARTIST = "GET_ARTIST";
 export const GET_ALBUMS = "GET_ALBUMS";

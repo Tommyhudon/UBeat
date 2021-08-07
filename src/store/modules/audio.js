@@ -1,11 +1,15 @@
 import { PLAY_AUDIO, STOP_AUDIO } from "../action-types";
-import { SET_CURRENTLY_PLAYING, CLEAR_CURRENTLY_PLAYING, RESET_STATE } from "../mutation-types";
+import {
+  SET_CURRENTLY_PLAYING,
+  CLEAR_CURRENTLY_PLAYING,
+  RESET_STATE
+} from "../mutation-types";
 
 const initialState = {
-  current: null,
+  current: null
 };
 
-export const state = { ...initialState };
+export let state = { ...initialState };
 
 export const actions = {
   [PLAY_AUDIO](context, track) {
@@ -22,21 +26,20 @@ export const mutations = {
     state.current = {
       audioId: track.trackId,
       audioName: track.trackName,
-      audioSrc: track.previewUrl,
-    }
+      audioSrc: track.previewUrl
+    };
   },
 
   [CLEAR_CURRENTLY_PLAYING](state) {
     state.current = null;
   },
 
-  [RESET_STATE](state) {
+  [RESET_STATE]() {
     state = { ...initialState };
   }
 };
 
-const getters = {
-};
+const getters = {};
 
 export default {
   state,

@@ -1,27 +1,27 @@
 <template>
   <div class="album-description">
     <div class="description">
-      <h1>{{album.collectionName}}</h1>
+      <h1>{{ album.collectionName }}</h1>
       <p>
         <span class="text-label">Artist:</span>
         <router-link v-bind:to="`/artist/${album.artistId}`">
-          <a>{{album.artistName}}</a>
+          <a>{{ album.artistName }}</a>
         </router-link>
       </p>
 
       <p>
         <span class="text-label">Released:</span>
-        {{formatReleaseDate(album.releaseDate)}}
+        {{ formatReleaseDate(album.releaseDate) }}
       </p>
 
       <p>
         <span class="text-label">Genre:</span>
-        {{album.primaryGenreName}}
+        {{ album.primaryGenreName }}
       </p>
 
       <p>
         <span class="text-label">Tracks:</span>
-        {{album.trackCount}}
+        {{ album.trackCount }}
       </p>
 
       <a
@@ -33,13 +33,16 @@
     </div>
 
     <div class="img-container">
-      <img class="album-image" v-bind:src="album.artworkUrl300" alt="Can't display image" />
+      <img
+        class="album-image"
+        v-bind:src="album.artworkUrl300"
+        alt="Can't display image"
+      />
     </div>
   </div>
 </template>
 
 <script>
-import { mapActions } from "vuex";
 export default {
   name: "AlbumDescription",
   props: ["album"],

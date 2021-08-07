@@ -30,8 +30,6 @@
 </template>
 
 <script>
-import Vue from "vue";
-import { mapActions } from "vuex";
 import { milliToMMSS } from "@/utils/time";
 import { PLAY_AUDIO } from "../../store/action-types";
 

@@ -5,7 +5,6 @@ import Home from "@/views/home/Home";
 import Album from "@/views/album/Album";
 import Artist from "@/views/artist/Artist";
 
-
 Vue.use(Router);
 
 const router = new Router({
@@ -14,21 +13,21 @@ const router = new Router({
     {
       path: "/",
       name: "Home",
-      component: Home,
+      component: Home
     },
     {
       path: "/artist/:id",
       name: "Artist",
-      component: Artist,
+      component: Artist
     },
     {
       path: "/album/:id",
       name: "Album",
-      component: Album,
+      component: Album
     },
     {
       path: "*",
-      redirect: '/',
+      redirect: "/"
     }
   ]
 });

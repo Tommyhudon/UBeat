@@ -1,7 +1,11 @@
 <template>
   <div class="home">
     <section class="today-spotlight-container">
-      <img class="spotlight-artist-img" src="https://i.imgur.com/qZqy0gw.jpg" alt="Post Malone" />
+      <img
+        class="spotlight-artist-img"
+        src="https://i.imgur.com/qZqy0gw.jpg"
+        alt="Post Malone"
+      />
 
       <div class="today-spotlight-infos">
         <h3 class="spotlight-title">Today's Spotlight:</h3>
@@ -78,7 +82,9 @@
               alt="Sweetner Of Ariana Grande"
             />
 
-            <span class="album-name suggested-title">Sweetner - Ariana Grande</span>
+            <span class="album-name suggested-title"
+              >Sweetner - Ariana Grande</span
+            >
           </router-link>
 
           <router-link to="/album/1193701079" class="album">
@@ -107,7 +113,9 @@
               alt="Beautiful Trauma - PINK"
             />
 
-            <span class="album-name suggested-title">Beautiful Trauma - Pink</span>
+            <span class="album-name suggested-title"
+              >Beautiful Trauma - Pink</span
+            >
           </router-link>
         </div>
       </div>

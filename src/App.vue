@@ -27,7 +27,7 @@ export default {
     ...mapState({
       audio: state => state.audio.current
     })
-  },
+  }
 };
 </script>
 

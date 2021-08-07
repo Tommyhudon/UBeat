@@ -21,12 +21,6 @@ class Api {
   }
 
   handleError(error) {
-    const { data } = error.response;
-
-    if (data && data.errorCode) {
-      Vue.toasted.error(USER_MESSAGES[data.errorCode]);
-    }
-
     return Promise.reject(error);
   }
 
