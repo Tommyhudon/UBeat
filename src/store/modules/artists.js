@@ -16,7 +16,8 @@ export const actions = {
   async [GET_ALBUMS](context, artistId) {
     context.commit(SET_ALBUMS, []);
     const { data } = await artistService.getAlbums(artistId);
-    context.commit(SET_ALBUMS, data.results);
+    const filteredData = data.results.filter((v, i, a) => a.findIndex(t => (t.collectionName === v.collectionName)) === i);
+    context.commit(SET_ALBUMS, filteredData);
     return data;
   },
   async [GET_ARTIST](context, artistId) {
